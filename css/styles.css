@@ -3182,7 +3182,7 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #1abc9c;
+  color: #12283f;
   text-decoration: none;
 }
 .btn-link:hover {
@@ -6505,7 +6505,7 @@ a.bg-primary:hover,
 a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #148f77 !important;
+  background-color: #12283f !important;
 }
 
 .bg-secondary {
@@ -10518,7 +10518,7 @@ a.text-dark:focus {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #1abc9c;
+  color: #12283f;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
