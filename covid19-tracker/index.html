@@ -1,0 +1,116 @@
+<!-- CODE EXPLAINED TUTORIALS -->
+<!-- youtube.com/CodeExplained -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resources/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./resources/img/logo.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://www.geoplugin.net/javascript.gp"></script>
+
+    <title>COVID-19 Stats</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./resources/img/logo.png" alt="" />
+        <p>COVID-19<br />Stats</p>
+      </div>
+    </header>
+    <main>
+      <div class="stats">
+        <div class="latest-reports">
+          <div class="country">
+            <div class="name">Loading...</div>
+            <div class="country-arr">
+              <div class="change-country">Change</div>
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                class="bi bi-caret-down-fill"
+                id="arrow-down"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                />
+              </svg>
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                class="bi bi-caret-up-fill hide"
+                id="arrow-up"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"
+                />
+              </svg>
+            </div>
+
+            <div class="search-country hide">
+              <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search..." />
+                <img class="close" src="./resources/img/close.svg" alt="" />
+              </div>
+              <div class="country-list"></div>
+            </div>
+          </div>
+          <div class="total-cases">
+            <div class="title">Total Cases</div>
+            <div class="value">0</div>
+            <div class="last-24">Last 24 hours:</div>
+            <div class="new-value">+0</div>
+          </div>
+          <div class="recovered">
+            <div class="title">Recovered</div>
+            <div class="value">0</div>
+            <div class="last-24">Last 24 hours:</div>
+            <div class="new-value">+0</div>
+          </div>
+          <div class="deaths">
+            <div class="title">Deaths</div>
+            <div class="value">0</div>
+            <div class="last-24">Last 24 hours:</div>
+
+            <div class="new-value">+0</div>
+          </div>
+        </div>
+        <div class="chart">
+          <canvas id="axes_line_chart"></canvas>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="copyright">
+          <p>Copyright Ⓒ 2020 Maor agai</p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="resources/js/countries.js"></script>
+    <script src="resources/js/app.js"></script>
+  </body>
+</html>
