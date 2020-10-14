@@ -1,0 +1,17 @@
+.carousel-inner > .carousel-item > img {
+  padding-top: 25px;
+  width: 640px;
+  height: 590px;
+  cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .carousel-inner > .carousel-item > .img-responsive {
+    height: 100%;
+    cursor: pointer;
+  }
+}
+
+/* .carousel-inner > .carousel-caption > .tech {
+  font-size: 0.875em;
+} */
